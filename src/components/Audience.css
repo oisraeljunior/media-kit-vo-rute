@@ -1,0 +1,163 @@
+.audience-section {
+  padding: var(--spacing-section) 0;
+  background-color: var(--color-offwhite);
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.audience-headline {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.audience-description {
+  font-size: 1.125rem;
+  color: var(--color-marrom);
+  margin-bottom: 4rem;
+}
+
+.audience-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 2rem;
+}
+
+.highlight-value {
+  font-family: var(--font-sans);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 300;
+  color: var(--color-terracota);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.highlight-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--color-marrom-dark);
+}
+
+.audience-data {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.data-box {
+  background-color: var(--color-creme);
+  padding: 3rem;
+  border-radius: 4px;
+}
+
+.data-title {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  margin-bottom: 2rem;
+  color: var(--color-marrom-dark);
+  text-transform: uppercase;
+}
+
+/* Age Chart */
+.age-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.age-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.age-range {
+  width: 60px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-marrom-dark);
+}
+
+.age-bar-wrapper {
+  flex: 1;
+  height: 8px;
+  background-color: rgba(92, 74, 61, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.age-bar {
+  height: 100%;
+  background-color: var(--color-sálvia);
+  border-radius: 4px;
+  transform-origin: left;
+  animation: grow-bar 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.age-percentage {
+  width: 50px;
+  text-align: right;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-marrom-dark);
+}
+
+/* Geography List */
+.geo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.geo-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(92, 74, 61, 0.1);
+}
+
+.geo-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.geo-city {
+  font-weight: 500;
+  color: var(--color-marrom-dark);
+}
+
+.geo-percentage {
+  font-weight: 600;
+  color: var(--color-terracota);
+}
+
+@keyframes grow-bar {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@media (max-width: 1024px) {
+  .audience-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .audience-section {
+    padding: var(--spacing-section-mobile) 0;
+  }
+  
+  .data-box {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,113 @@
+.borbole-section {
+  padding: var(--spacing-section) 0;
+  background-color: var(--color-marrom-dark);
+  color: var(--color-offwhite);
+}
+
+.borbole-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.borbole-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--color-terracota-light);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.borbole-headline {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: var(--color-offwhite);
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.borbole-text p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-bege);
+}
+
+.borbole-context {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-left: 2px solid var(--color-terracota);
+  margin-bottom: 2rem;
+}
+
+.borbole-context p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.borbole-context strong {
+  color: var(--color-offwhite);
+}
+
+.highlight-text {
+  font-family: var(--font-serif);
+  font-size: 1.5rem !important;
+  color: var(--color-offwhite) !important;
+  line-height: 1.4;
+  margin-top: 3rem;
+  font-style: italic;
+}
+
+.borbole-visuals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.borbole-main-image {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.borbole-screenshot {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.borbole-image-large,
+.borbole-image-small {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: inherit;
+}
+
+.borbole-visuals .image-placeholder {
+  background-color: var(--color-marrom);
+}
+
+@media (max-width: 1024px) {
+  .borbole-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  .borbole-visuals {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .borbole-section {
+    padding: var(--spacing-section-mobile) 0;
+  }
+}

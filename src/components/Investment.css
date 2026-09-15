@@ -1,0 +1,47 @@
+.investment-section {
+  padding: var(--spacing-section) 0;
+  background-color: var(--color-creme);
+}
+
+.investment-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.investment-headline {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: var(--color-marrom-dark);
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.investment-headline .headline-line:last-child {
+  font-style: italic;
+  color: var(--color-terracota);
+}
+
+.investment-description {
+  font-size: 1.125rem;
+  color: var(--color-marrom);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.investment-highlight {
+  font-family: var(--font-sans);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: var(--color-marrom-dark);
+  padding: 2rem;
+  border: 1px solid rgba(92, 74, 61, 0.2);
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .investment-section {
+    padding: var(--spacing-section-mobile) 0;
+  }
+}
